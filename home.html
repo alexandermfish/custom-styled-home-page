@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://startpages.github.io/startpages/mpcsh-startpage/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title id="favtitle">startpageo</title>
+		<link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+
+    <script type="text/javascript">
+    function randbg(){
+      var randomnum = Math.floor((Math.random() * 17) + 1);
+      // $ is a function to get element by id
+      $("background").setAttribute("style", "background-image: url('"+ randomnum.toString() + ".jpg'); background-size:cover"); //randomly apply a background
+
+      var title;
+      var subtitle;
+
+      switch(randomnum) { //switch statement setting rand greeting
+    case 1: //daft punk
+        title = "Transhumanism.";
+        subtitle = "the belief or theory that the human race can evolve beyond its current physical and mental limitations, especially by means of science and technology.";
+        break;
+    case 2: // dark night
+        title = "Pensive.";
+        subtitle = "engaged in, involving, or reflecting deep or serious thought.";
+        break;
+    case 3: // green cave pristine
+        title = "Discover.";
+        subtitle = "to make known or visible.";
+        break;
+    case 4: // Brotherhood
+        title = "Brotherhood.";
+        subtitle = "the greatest feeling on this side of Eden.";
+
+        break;
+    case 5: //lone man in a tower in the city
+        title = "Confidence.";
+        subtitle = "a feeling of trust in one's abilities, qualities, and judgement.";
+        break;
+    case 6: // riots
+        title = "Atmosphere.";
+        subtitle = "the pervading tone or mood of a place, situation, or creative work.";
+        break;
+    case 7: // dark house
+        title = "Mystery.";
+        subtitle = "anything that is kept secret or remains unexplained or unknown: dark, enigmatic.";
+        break;
+    case 8: //rock pier
+        title = "Longing.";
+        subtitle = "a yearning desire.";
+        break;
+    case 9: //wood pier
+        title = "How you like them apples?";
+        subtitle = "The robots are coming";
+        break;
+    case 10: // the sun
+        title = "Élan.";
+        subtitle = "energy, style, and enthusiasm.";
+        break;
+    case 11: //lonely strange place
+        title = "A place beyond belief.";
+        subtitle = "The robots are coming";
+        break;
+    case 12: // comfy room
+        title = "Family.";
+        subtitle = " have a cozy one tonight.";
+        break;
+    case 13: //jupiter full -CHANGE THIS TO NON JUPITER
+        title = "Tenderness";
+        subtitle = "gentleness and kindness; kindliness";
+        break;
+    case 14: //jupiter dark
+        title = "Jupiter.";
+        subtitle = "the supreme deity of the ancient Romans: the god of the heavens and of weather.";
+        break;
+    case 15: //clouds
+        title = "How you like them apples?";
+        subtitle = "The robots are coming";
+        break;
+    case 16: //engine repair
+        title = "Most Daft of Punks";
+        subtitle = "The robots are coming";
+        break;
+    case 17: // alex turner
+        title = "Cool.";
+        subtitle = "very cool.";
+        break;
+
+
+    default:
+        title = "Hi!";
+        subtitle = "search"
+      }
+
+      document.getElementById('greeting').innerHTML = title;
+      document.getElementById('favtitle').innerHTML = title;
+      document.getElementById('searchtext').placeholder = subtitle;
+
+    //  $("greeting").setAttribute("innerHTML")
+    }
+
+    </script>
+
+
+	</head>
+	<body id="background" onload = "randbg();">
+		<div class="allcontainer">
+      <h2 id="greeting" onclick="randbg();">Brotherhood.</h2>
+
+
+      <div class="search">
+        <form method="get" action="https://www.google.com.au/search?q=">
+          <input class="search-box" id="searchtext" name="q" type="text" placeholder="the greatest feeling on this side of Eden.">
+        </form>
+      </div>
+			<div class="favoritescontainer">
+
+				<div class="titlename" onmouseover="drop1Hover();" onmouseout="undrop1Hover();">
+          <p >Entertainment</p>
+          <div class= "dcontainer" id="drop1">
+            <ul>
+  						<li><a href="https://www.youtube.com/">youtube</a></li>
+  						<li><a href="https://www.netflix.com/browse">netflix</a></li>
+  						<li><a href="https://www.twitch.tv/">twitch</a></li>
+  						<li><a href="https://www.reddit.com/">reddit</a></li>
+              <li><a href="http://www.4chan.org/">4chan</a></li>
+
+  					</ul>
+          </div>
+
+				</div>
+
+        <div class="titlename" onmouseover="drop2Hover();" onmouseout="undrop2Hover();">
+          <p >Learn</p>
+          <div class="dcontainer" id="drop2">
+            <ul>
+
+  						<li><a href="https://news.ycombinator.com/">hacker news</a></li>
+  						<li><a href="https://hackernoon.com">hacker noon</a></li>
+  						<li><a href="https://www.w3schools.com/colors/colors_picker.asp">hex colour picker</a></li>
+              <li><a href="https://www.reddit.com/r/dailyprogrammer/">daily programmer</a></li>
+							<li><a href="https://www.udemy.com/">udemy</a></li>
+              <li><a href="https://cryptopals.com/">cryptopals</a></li>
+              <li><a href="http://overthewire.org/wargames/">wargames</a></li>
+              <li><a href="https://todoist.com/">todoist</a></li>
+							<li><a href="https://www.duolingo.com">duolingo</a></li>
+
+
+  					</ul>
+          </div>
+
+				</div>
+
+        <div class="titlename" onmouseover="drop3Hover();" onmouseout="undrop3Hover();">
+          <p>Interests</p>
+          <div class="dcontainer" id="drop3">
+            <ul >
+              <li><a href="http://boards.4chan.org/wg/">/wg/</a></li>
+  						<li><a href="http://boards.4chan.org/mu/">/mu/</a></li>
+							<li><a href="http://boards.4chan.org/tv/">/tv/</a></li>
+              <li><a href="http://boards.4chan.org/g/">/g/</a></li>
+
+  						<li><a href="http://boards.4chan.org/ck/">/ck/</a></li>
+
+
+              <li><a href="http://boards.4chan.org/sci/">/sci/</a></li>
+              <li><a href="http://boards.4chan.org/fit/">/fit/</a></li>
+              <li><a href="http://boards.4chan.org/out/">/out/</a></li>
+
+
+
+  					</ul>
+          </div>
+
+				</div>
+
+        <div class="titlename" onmouseout="undrop4Hover();"  onmouseover="drop4Hover();">
+          <p>Social</p>
+          <div class="dcontainer" id="drop4">
+            <ul>
+  						<li><a href="https://www.live.com">live</a></li>
+  						<li><a href="https://mail.google.com/mail/">gmail</a></li>
+  						<li><a href="https://www.facebook.com">facebook</a></li>
+              <li><a href="https://www.instagram.com/">instagram</a></li>
+
+
+  					</ul>
+          </div>
+
+				</div>
+
+        <div class="titlename" onmouseout="undrop5Hover();" onmouseover="drop5Hover();">
+          <p >Miscellaneous</p>
+          <div class="dcontainer" id="drop5">
+            <ul>
+  						<li><a href="https://thepiratebay.org/">pirate bay</a></li>
+  						<li><a href="https://rutracker.org/forum/index.php">rutracker</a></li>
+							<li><a href="https://yts.ag/">yts</a></li>
+							<li><a href="https://rarbg.to/">rarbg</a></li>
+
+              <li><a href="https://qutvirtual4.qut.edu.au/group/student/study">qut</a></li>
+
+
+  						<li><a href="https://calendar.google.com/">calendar</a></li>
+              <li><a href="http://www.dictionary.com/fun/crossword">crossword</a></li>
+              <li><a href="http://www.dictionary.com/wordoftheday/">word of the day</a></li>
+              <li><a href="https://racqbank.com.au/#/login">banking</a></li>
+							<li><a href="https://www.random.org/">random</a></li>
+
+
+
+  					</ul>
+          </div>
+
+				</div>
+			</div>
+
+
+
+		</div>
+
+
+
+</body>
+
+<script>
+  var $ = function(id){
+    return document.getElementById(id);
+  };
+
+  // functions below hide/show each list when hoevered
+  function drop1Hover(){
+    $("drop1").setAttribute("style", "visibility: visible;  opacity:0.8; transition:0.5s;")
+  }
+  function undrop1Hover(){
+    $("drop1").setAttribute("style", "visibility: hidden; opacity:0; transition:1s;")
+  }
+
+
+  function drop2Hover(){
+    $("drop2").setAttribute("style", "visibility: visible;  opacity:0.8; transition:0.5s;")
+  }
+  function undrop2Hover(){
+    $("drop2").setAttribute("style", "visibility: hidden; opacity:0; transition:1s;")
+  }
+
+
+  function drop3Hover(){
+    $("drop3").setAttribute("style", "visibility: visible;  opacity:0.8;transition:0.5s;")
+  }
+  function undrop3Hover(){
+    $("drop3").setAttribute("style", "visibility: hidden; opacity:0; transition:1s;")
+  }
+
+
+  function drop4Hover(){
+    $("drop4").setAttribute("style", "visibility: visible;  opacity:0.8; transition:0.5s;")
+  }
+  function undrop4Hover(){
+    $("drop4").setAttribute("style", "visibility: hidden; opacity:0; transition:1s;")
+  }
+
+
+  function drop5Hover(){
+    $("drop5").setAttribute("style", "visibility: visible; opacity:0.8; transition:0.5s;")
+  }
+  function undrop5Hover(){
+    $("drop5").setAttribute("style", "visibility: hidden;  opacity:0; transition:1s;")
+  }
+
+
+
+
+
+
+
+</script>
+
+</html>
