@@ -13,7 +13,7 @@ In the JavaScript section of the HTML file the headings and subheadings will hav
 
 
 ## To do
-* add editable text as functionality
+* make the title text editable/saveable from within the page
 
 
 ## Demo
