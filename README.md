@@ -10,7 +10,8 @@ Add .jpg images to the same folder with the naming convention "number.jpg". Eg: 
 
 In the JavaScript section of the HTML file the headings and subheadings will have to be manually edited to have custom text there.
 
-### TODO
+## TODO
 * add editable text as functionality
 
+## Demo
 ![](demo.gif)
